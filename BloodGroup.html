@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+			function validateForm(){
+			var BG = document.getElementById('BG').value;
+			if(!((BG == "A+")||(BG == "A-")||(BG == "B+")))
+			{
+				document.getElementById('msg').innerHTML = "null submission";
+			}
+			else{
+				document.getElementById('msg').innerHTML = "Ok";
+			}
+			
+		}
+
+}
+</script>
+
+
+	<title>Registration Form</title>
+	
+</head>
+<body>
+
+	<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+
+		<center>
+<h2>Registration</h2>
+
+	<table >
+	<tr>
+			<td>BG:</td>
+			<td>
+				<select>
+					<option>A+</option>
+					<option>B+</option>
+					<option>A-</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td> <input type="submit" value="Submit"></td>
+		
+		</tr>
+		
+	</table>
+		</center>
+
+	</form>
+
+
+</body>
+</html>
+
+
+
+
