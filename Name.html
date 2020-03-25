@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		/*	function validateForm() {
+  var name = document.forms["myForm"]["name"].value;
+  if (name == "") 
+  {
+    alert("Name must be filled out");
+    return false;
+  }
+
+
+  function validateForm() {
+  var name = document.getElementById("id1");
+ if (name == "")  {
+    document.getElementById("id1").innerHTML = "Name must be filled out";
+    return false;
+  }
+}
+*/
+function myFunction() {
+  var inpObj = document.getElementById("id1");
+  if (inpObj == "") {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  } else {
+    document.getElementById("demo").innerHTML = "Input OK";
+  } 
+} 
+
+
+</script>
+
+
+	<title>Name</title>
+	
+</head>
+<body>
+
+	<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+
+		<center>
+<h2>Name</h2>
+
+	<table >
+		<tr>
+			 <td>Name:</td>
+			 <td><input id="id1" type = "text" name = "name"><p id="demo"></p></td>
+		</tr>
+		<tr>
+			<td> <input type="submit" value="Submit"></td>
+			<td></td>
+		</tr>
+		
+	</table>
+		</center>
+
+	</form>
+
+
+</body>
+</html>
+
+
+
+

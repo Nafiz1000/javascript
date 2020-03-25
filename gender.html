@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+			function validateForm()(){
+			var name = document.forms["myForm"]["name"].value;
+			if(name == ""){
+				document.forms('myForm').innerHTML = "null submission";
+			}else{
+				document.forms('myForm').innerHTML = "Ok";
+			}
+			
+		}
+
+}
+</script>
+
+
+	<title>Registration Form</title>
+	
+</head>
+<body>
+
+	<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+
+		<center>
+<h2>Registration</h2>
+
+	<table >
+		<tr>
+			 <td>Gender:</td>
+			 <td>
+					<input type = "radio" name = "gender" value = "male">Male
+					<input type = "radio" name = "gender" value = "female">Female
+					<input type = "radio" name = "gender" value = "other">other
+					
+			 </td>
+		</tr>
+		<tr>
+			<td> <input type="submit" value="Submit"></td>
+		
+		</tr>
+		
+	</table>
+		</center>
+
+	</form>
+
+
+</body>
+</html>
+
+
+
+
